@@ -1,0 +1,10 @@
+:root{
+    --bg-color-input: #ff3333;
+    --bg-color-output: #0B080B;
+    --bg-color-output-hover: #000000;
+    --font-color-primary: #F1F0F1;
+    --font-color-secundary:#8C8A8C;
+    --bg-color-btn: #7e0000c7;
+    --bg-color-btn-hover: #630000c7;
+    --bg-color-btn-active: #300000c7;
+}

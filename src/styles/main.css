@@ -1,0 +1,129 @@
+@import url(reset.css);
+@import url(colors.css);
+
+main{
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    display: flex;
+
+    padding: 2rem;
+    gap: .4rem;
+
+    font-weight: 600;
+    font-size: 1.8rem;
+
+    background-color: var(--bg-color-output);
+    color: var(--font-color-primary);
+}
+
+.input_container{
+    height: 100%;
+    width: 50%;
+    background-color: var(--bg-color-input);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input_container_content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.input_container_content textarea{
+    padding: .9rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.btn{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--bg-color-output);
+    color: var(--font-color-primary);
+    letter-spacing: 2px;
+}
+
+#dcpt_btn{
+    background-color: var(--bg-color-btn);
+    transition: all 0.2s ease;
+}
+
+#cpt_btn{
+    transition: all 0.2s ease;
+}
+
+#cpt_btn:hover{
+    background-color: var(--bg-color-output-hover);
+}
+
+#dcpt_btn:hover{
+    background-color: var(--bg-color-btn-hover);
+}
+
+#dcpt_btn:active{
+    background-color: var(--bg-color-btn-active);
+}
+
+.output_container{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: .8rem;
+    gap: 2rem;
+
+    background-color: var(--bg-color-output);
+    color: var(--font-color-primary);
+}
+
+.output_container p{
+    margin-top: .4rem;
+    text-align: center;
+    color: var(--font-color-secundary);
+}
+
+.output_container img{
+    width: 18rem;
+}
+
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    background-color: var(--bg-color-output);
+    color: var(--font-color-primary);
+}
+
+.social_medias{
+    display: flex;
+    gap: .8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
