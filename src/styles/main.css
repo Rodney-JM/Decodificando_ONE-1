@@ -2,7 +2,7 @@
 @import url(colors.css);
 
 main{
-    height: 85vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@ header{
 
 .input_container{
     height: 100%;
-    width: 50%;
+    width: 60%;
     background-color: var(--bg-color-input);
 
     display: flex;
@@ -33,17 +33,29 @@ header{
 
 .input_container_content{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 3rem;
     padding: 2rem;
 }
 
+.input_container p{
+    display: flex;
+    gap: .6rem;
+}
+
 .input_container_content textarea{
+    background-color: var(--bg-color-input);
     padding: .9rem;
     font-size: 1rem;
     border: none;
     border-radius: 1rem;
     outline: none;
+}
+
+.input_container_content textarea::placeholder{
+    color: black;
 }
 
 .buttons{
@@ -86,6 +98,7 @@ header{
 
 .output_container{
     height: 100%;
+    width: 40%;
 
     display: flex;
     flex-direction: column;
@@ -99,16 +112,40 @@ header{
     color: var(--font-color-primary);
 }
 
+.output-container_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
 .output_container p{
     margin-top: .4rem;
     text-align: center;
     color: var(--font-color-secundary);
 }
 
-.output_container img{
-    width: 18rem;
+.output_container h2{
+    text-align: center;
 }
 
+.output_container img{
+    width: 40%;
+}
+
+#copy_btn{
+    text-align: center;
+    border: none;
+    background-color: #020202;
+}
+#copy_btn:hover{
+    background-color: #0f0f0f;
+}
+
+#copy_btn:active{
+    background-color: #2e2e2e;
+}
 footer{
     height: 50px;
     display: flex;
@@ -123,7 +160,40 @@ footer{
 
 .social_medias{
     display: flex;
-    gap: .8rem;
-    font-size: 1.2rem;
+
+    gap: 1rem;
     cursor: pointer;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    main{
+        flex-direction: column;
+    }
+    .input_container{
+        height: 50%;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .input_container textarea{
+        height: 20%;
+    }
+
+    .buttons{
+        gap: 1rem;
+    }
+    .btn{
+        padding: .6rem 1rem .6rem 1rem;
+        font-size: .6rem;
+        letter-spacing: 1px;
+    }
+    .output_container{
+        height: 50%;
+        width: 100%;
+    }
 }

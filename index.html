@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
 </head>
 <body>
     <header>
@@ -23,7 +23,8 @@
     <main>
         <section class="input_container">
             <div class="input_container_content">
-                <textarea name="area_input" id="ipt_area" cols="30" rows="25" placeholder="Digite a sua mensagem"></textarea>
+                <textarea name="area_input" id="ipt_area" cols="25" rows="15" placeholder="Digite a sua mensagem"></textarea>
+                <p><i class="fa-solid fa-circle-exclamation"></i>Apenas letras minúsculas e sem acento.</p>
                 <div class="buttons">
                     <input type="button" value="Criptografar" id="cpt_btn" class="btn">
                     <input type="button" value="Descriptografar" id="dcpt_btn" class="btn">
@@ -31,20 +32,22 @@
             </div>
         </section>
         <section class="output_container">
-            <img src="/src/assets/images/undraw_articles_wbpb.svg" alt="Woman Image" id="w_img">
-            <div class="output-container_content">
-                <h2>Nenhuma mensagem encontrada</h2>
-                <p>Digite um texto que vocẽ deseja criptografar ou descriptografar</p>
+            <img src="./src/assets/images/undraw_articles_wbpb.svg" alt="Woman Image" id="w_img">
+            <div class="output-container_content" id="displayTexts">
+                <h2 id="title">Nenhuma mensagem encontrada</h2>
+                <p id="desc">Digite um texto que vocẽ deseja criptografar ou descriptografar</p>
             </div>
+            <input type="button" value="Copy" id="copy_btn" class="btn">
         </section>
     </main>
     <footer>
         <p>Desenvolvido por Rodney</p>
         <div class="social_medias">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-github"></i>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>
