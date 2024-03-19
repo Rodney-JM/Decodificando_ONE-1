@@ -134,16 +134,16 @@ header{
     width: 40%;
 }
 
-#copy_btn{
+#copy_btn, #clean_btn{
     text-align: center;
     border: none;
     background-color: #020202;
 }
-#copy_btn:hover{
+#copy_btn:hover, #clean_btn:hover{
     background-color: #0f0f0f;
 }
 
-#copy_btn:active{
+#copy_btn:active, #clean_btn:active{
     background-color: #2e2e2e;
 }
 footer{
